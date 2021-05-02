@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-FILES=/pdf-scan-extract-info/*.pdf
+FILES=/var/lib/jenkins/workspace/Extractor-Runquery/*.pdf
 j=1
 for i in $FILES
 do
