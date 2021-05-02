@@ -8,7 +8,7 @@ placearr=()
 
 for i in $name
 do
-  two=$(cat $i | awk '{if($2=="No" && $4=="Date") {print $2} }')
+  two=$(cat $i | awk '{if($2=="No" && $4=="Date:") {print $2} }')
 
   if [ -z $two ]
   then
