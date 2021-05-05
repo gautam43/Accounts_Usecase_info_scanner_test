@@ -12,9 +12,9 @@ do
 
   if [ -z $two ]
   then
-        invoice=$(cat $i | awk '$1=="Invoice" && $2=="Number:" { print $3 }' | tail -c 7)
+        invoice=$(cat $i | awk '$1=="Invoice" && $2=="Number:" { print $3 }' | tail -c 6)
   else
-        invoice=$(cat $i | awk '$1=="Invoice" && $2=="No" { print $5 }' | cut -d "[" -f 1 | tail -c 7)
+        invoice=$(cat $i | awk '$1=="Invoice" && $2=="No" { print $5 }' | cut -d "[" -f 1 | tail -c 6)
   fi
  
 
